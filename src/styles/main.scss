@@ -1,3 +1,29 @@
-body{
-    background-color: red;
+@use 'reset';
+@use 'var';
+@use 'hero';
+
+@media (max-width: var.$tablet){
+    .container{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: var.$mobile){
+    .container{
+        max-width: 80%;
+    }
+
+    .hero{
+        padding: 40px 0;
+
+        &__logo{
+            height: 40px;
+        }
+
+        &__text{
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
 }
