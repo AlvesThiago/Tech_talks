@@ -3,7 +3,7 @@
 
 .infos-bar{
     padding: 16px 24px;
-    background-color: #fff;
+    background-color: var.$corText;
     display: flex;
     justify-content: space-between;
 
@@ -16,12 +16,12 @@
             b{
                 font-size: 18px;
                 display: block;
-                color: #000;
+                color: var.$corTextSecundary;
             }
 
             span{
                 font-size: 14px;
-                color: #000;
+                color: var.$corTextSecundary;
             }
         }
     }
