@@ -1,10 +1,30 @@
 @use 'reset';
 @use 'var';
 @use 'hero';
+@use 'components/infosbar';
+@use 'components/buttons';
 
 @media (max-width: var.$tablet){
     .container{
         max-width: 90%;
+    }
+
+    .infos-bar{
+        &__infos{
+            gap: 16px;
+
+            &__item{
+                &:last-child{
+                    margin-right: 16px;
+                }
+            }
+
+        }
+    }
+    
+    .button{
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -25,5 +45,22 @@
             line-height: 24px;
             margin: 24px 0;
         }
+    }
+
+    .infos-bar{
+        display: block;
+
+        &__infos{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .button{
+        display: block;
+        width: 100%;
     }
 }

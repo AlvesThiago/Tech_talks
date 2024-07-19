@@ -1,0 +1,28 @@
+@use '../reset';
+@use '../var';
+
+.infos-bar{
+    padding: 16px 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__infos{
+        display: flex;
+        gap: 40px;
+
+        &__item{
+            b{
+                font-size: 18px;
+                display: block;
+                color: #000;
+            }
+
+            span{
+                font-size: 14px;
+                color: #000;
+            }
+        }
+    }
+}
