@@ -1,4 +1,4 @@
-const dataEvento = new Date("july 15, 2024 19:00:00");
+const dataEvento = new Date("july 25, 2024 19:00:00");
 const timeStampEvento = dataEvento.getTime();
 
 const timer = setInterval(function(){
